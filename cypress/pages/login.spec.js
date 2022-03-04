@@ -25,9 +25,9 @@ class Login {
 
    navigateToTheLoginPage() {
       if (this.elements.login) {
-       this.elements.login().click();  
+         this.elements.login().click();
       }
-      else if(this.elements.logout) {
+      else if (this.elements.logout) {
          this.elements.logout().click();
       }
    }
@@ -51,7 +51,7 @@ class Login {
    checkLoginError(err) {
       this.elements.checkLoginErr().should("have.text", err);
    }
-   
+
 }
 
 module.exports = new Login();

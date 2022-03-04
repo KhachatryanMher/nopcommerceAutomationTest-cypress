@@ -19,6 +19,7 @@ class Registration {
       inputConfirmPassword: () => cy.get("#ConfirmPassword"),
       clickRegister: () => cy.get("#register-button"),
       clearName: () => cy.get('#FirstName'),
+      SuccessfulResultMessage: () => cy.get('div.result'),
 
       checkEmailErr: () => cy.get("#Email-error"),
       checkPasswordErr: () => cy.get("#Password-error"),
@@ -91,6 +92,10 @@ class Registration {
 
    clearFirstNameField() {
       this.elements.clearName().clear();
+   }
+
+   checkSuccessfulMessage(mess) {
+      this.elements.SuccessfulResultMessage().should('have.text', mess);
    }
 
    checkEmailError(err) {

@@ -7,7 +7,7 @@ const password = 'qwerty123456';
 const email = 'test2@example.net';
 
 describe("Login with valid data", () => {
-   
+
    before(() => {
       Login.visitInTheSite();
       Login.checkLocation('/');

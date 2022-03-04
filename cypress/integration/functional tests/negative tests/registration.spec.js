@@ -68,7 +68,7 @@ describe("Registration with invalid data", () => {
       Registration.typeCompanyName(companyName);
       Registration.DisableNewsletter();
       Registration.typePassword(Password);
-      Registration.typeConfirmPassword(Password );
+      Registration.typeConfirmPassword(Password);
       Registration.clickRegisterButton();
       Registration.checkFirstNameError('First name is required.');
    });
@@ -80,7 +80,7 @@ describe("Registration with invalid data", () => {
       Registration.typeCompanyName(companyName);
       Registration.DisableNewsletter();
       Registration.typePassword(Password);
-      Registration.typeConfirmPassword(Password );
+      Registration.typeConfirmPassword(Password);
       Registration.clickRegisterButton();
       Registration.checkDay_MonthErr('Day or Month is invalid');
    });

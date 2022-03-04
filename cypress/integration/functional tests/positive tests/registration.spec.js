@@ -33,6 +33,7 @@ describe('Registration with valid data', () => {
       Registration.typeConfirmPassword(password);
       Registration.clickRegisterButton();
       Registration.checkLocation('/registerresult/1');
+      Registration.checkSuccessfulMessage('Your registration completed');
    });
 
 });
